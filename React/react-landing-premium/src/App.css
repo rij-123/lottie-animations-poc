@@ -1,0 +1,53 @@
+body {
+  margin: 0;
+  font-family: Arial;
+}
+
+.app {
+  background: #ffffff;
+  color: #111;
+  transition: 0.3s;
+}
+
+.app.dark {
+  background: #111;
+  color: #fff;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.hero {
+  text-align: center;
+  padding: 50px;
+  animation: fadeIn 1s ease-in;
+}
+
+.cards {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.card {
+  padding: 20px;
+  background: #f1f1f1;
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.footer {
+  text-align: center;
+  padding: 20px;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
